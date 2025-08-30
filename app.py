@@ -10,7 +10,7 @@ from sklearn.metrics import accuracy_score
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"D:\AI WORKSHOP\TASK\BOOSTING_task\UCI_Credit_Card.csv")
+    df = pd.read_csv("UCI_Credit_Card.csv")
     df = df.drop(columns=["ID"], errors="ignore")  # Drop ID if exists
     return df
 
